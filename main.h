@@ -51,7 +51,7 @@ int print_char(va_list types, char buffer[],
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_percent(va_list types, char buffer[],
-	int flags, int width, int precision, int size);
+	int flags, int width, int precision, int size;
 
 /* Functions to print numbers */
 int print_int(va_list types, char buffer[],
@@ -113,5 +113,16 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
+
+int char_printf(va_list val);
+int _putchar(char c);
+int _printf(const char *format, ...); 
+int string_for_printf(va_list val);
+int _strleng(char *str);
+int _strlengc(const char *str);
+int print_27(void);
+int printf_int(va_list args); 
+int printf_dec(va_list args); 
+int printf_bin(va_list val);
 
 #endif /* MAIN_H */
